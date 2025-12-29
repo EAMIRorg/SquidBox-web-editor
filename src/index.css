@@ -118,4 +118,17 @@
   body {
     @apply bg-background text-foreground;
   }
+
+  /* Override react-piano active key color to match SquidBox palette */
+  .ReactPiano__Key--active {
+    background: oklch(48.302% 0.26469 291.332) !important;
+  }
+
+  .ReactPiano__Key--active.ReactPiano__Key--accidental {
+    border-top: 1px solid oklch(48.302% 0.26469 291.332) !important;
+  }
+
+  .ReactPiano__Key--active.ReactPiano__Key--natural {
+    border: 1px solid oklch(48.302% 0.26469 291.332) !important;
+  }
 }
